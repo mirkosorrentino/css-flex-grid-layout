@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+/* VARIABLES */
+:root {
+    --sidebar-width: 300px;
+}
+
 .container {
     display: flex;
 
@@ -15,13 +20,15 @@
 }
 
 nav {
-    width: 300px;
+    width: var(--sidebar-width);
+    padding: 20px 10px;
     /* debug */
     background-color: lightgreen;
 }
 
 main {
     flex-grow: 1;
+    padding: 20px;
     /* debug */
     background-color: lightpink;
 }
