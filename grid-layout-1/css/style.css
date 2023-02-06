@@ -19,7 +19,41 @@
     background-color: lightblue;
 }
 
-nav {
+/* HEADER */
+header {
+    height: 70px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+    /* debug */
+    background-color: aquamarine;
+}
+
+.logo {
+    width: var(--sidebar-width);
+}
+
+.header-nav {
+    flex-grow: 1;
+}
+
+.header-list {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    align-items: center;
+}
+
+.actions {
+    text-align: right;
+}
+
+
+/* PRINCIPLE SECTION */
+
+.menu-nav {
     width: var(--sidebar-width);
     padding: 20px 10px;
     /* debug */
@@ -31,4 +65,14 @@ main {
     padding: 20px;
     /* debug */
     background-color: lightpink;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+
+    /* debug */
+    background-color: blue;
 }
